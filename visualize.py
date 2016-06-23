@@ -53,4 +53,4 @@ for season in transcript.seasons:
     path = os.path.join(output_prefix, str(season.code) + '.json')
     with open(path, encoding="utf-8", mode="w") as f:
         data = map(lambda ep: ep.lines.filter(lambda l: not l.is_action()), season.episodes)
-        json.dump(list(data), f, cls=ModelEncoder)
+        json.dump(list(data), f, cls=ModelEncoder, sort_keys=True)

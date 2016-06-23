@@ -16,7 +16,9 @@
 	<header class='main'>
 		<h1>Visual Transcript of My Little Pony: Friendship is Magic</h1>
 		<p>Each square represents a word, spoken or sung in the episode. 
-			Data taken from the <a href="http://mlp.wikia.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki">Friendship is Magic Wiki</a></p>
+			Data taken from the <a href="http://mlp.wikia.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki">Friendship is Magic Wiki</a>.
+            <a href="https://github.com/ZhangYiJiang/mlp-visualization">Fork this on GitHub</a>.
+        </p>
 	</header>
 	<nav>
         % for season in seasons:
