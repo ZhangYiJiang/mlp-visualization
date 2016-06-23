@@ -1,0 +1,931 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  box-sizing: content-box; /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+
+/*===================================================*/ 
+
+body {
+  font-family: Lato, Arial, sans-serif; 
+  padding: 1rem;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+main h2 {
+  clear: both;
+  font-size: 2.4rem;
+  color: #999;
+  margin: 0 0 1.2rem;
+  padding-top: 2rem;
+}
+
+main h3 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0095DD;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+main {
+  float: left;
+}
+
+.legend {
+  float: left;
+  width: 10rem;
+  margin-left: 2rem;
+}
+
+.meta {
+  float: left;
+  width: 8rem;
+  padding-right: 1rem;
+}
+
+.meta p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  opacity: 0.9;
+  color: #999;
+}
+
+.meta .special, 
+.legend ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.meta .special li {
+  margin-bottom: 0.1rem;
+}
+
+.legend ul span, 
+.meta .special span {
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  border: 1px solid #666;
+  margin-right: 0.3rem;
+  margin-bottom: -1px;
+}
+
+.legend {
+  position: sticky; 
+  top: 2rem;
+}
+
+.legend h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+  font-weight: 300;
+}
+
+.legend ul {
+  margin: 0 0 2rem 0;
+}
+
+.legend li {
+  margin-bottom: .3rem;
+  cursor: pointer;
+}
+
+.legend li:hover {
+  text-decoration: underline;
+}
+
+.legend .so {
+  visibility: hidden;
+}
+
+.legend .so:after {
+  content: '♫';
+  visibility: visible;
+}
+
+.filtered.legend li {
+  opacity: 0.6;
+}
+
+.filtered.legend li.active {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.season {
+  counter-reset: episode;
+  margin-bottom: 8rem;
+}
+
+.season > div {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 4rem;
+  counter-increment: episode; 
+  position: relative;
+}
+
+.season > div:before {
+  content: counter(episode);
+  position: absolute;
+  bottom: -.2rem;
+  left: 0;
+  font-size: 3rem;
+  opacity: 0.1;
+}
+
+.season ol {
+  list-style: none;
+  border: 1px solid #ccc;
+  width: 50rem;
+  float: left;
+  margin: 0;
+
+  font-size: 8px;
+  line-height: 11px;
+  letter-spacing: 5px;
+}
+
+.season ol li {
+  display: inline; 
+  text-align: justify;
+  word-wrap: break-word; 
+  white-space: pre-wrap;
+  color: transparent;
+  border-radius: 1px;
+  cursor: default;
+}
+
+.season ol li:hover {
+  opacity: 1;
+  outline: 1px solid red;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+  z-index: 10;
+}
+
+.season ol li::selection {
+  color: transparent;
+}
+
+.season ol li::-moz-selection {
+  color: transparent;
+}
+
+.instructions {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #FF7F27;
+}
+
+main.alt ol li {
+  display: inline-block;
+}
+
+header.main p {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #f3f3f3;
+  overflow: hidden;
+  margin: 0 -1rem;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.13)
+}
+
+nav a {
+  float: left;
+  padding: 0.4rem 1rem 0.5rem;
+  color: #FF7F27;
+  font-weight: bold;
+
+  transition: 0.3s all;
+}
+
+nav a:hover {
+  background-color: #FF7F27;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  clear: both;
+}
+
+.line-info {
+  font-size: 0.75rem;
+  max-width: 30rem;
+  padding: 0.3rem 0.6rem;
+
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+
+  z-index: 10000;
+}
+
+.line-info p {
+  margin: 0;
+}
+
+.line-info .speaker {
+  font-weight: bold;
+}
+
+.progress {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.6rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  display: none;
+  z-index: 100000;
+}
+
+/* Minor Characters */
+.tx { background: #DAF0FB } /* Trixie */
+.ch { background: #B84792 } /* Cheerilee */ 
+.cr { background: #98834B } /*  */
+.gi { background: #C3973D } /* Gilda */
+.iw { background: #6474A1 } /* Iron Will */
+.fp { background: #6D96C5 } /* Fancy Pants */
+.cs { background: #FDC34A } /* Cheese Sandwich */
+.gs { background: #cce9a5 } /* Granny Smith */
+.gd { background: #EBCD6F } /* Goldie Delicious */
+.bm { background: #DC3559 } /* Big Mac */
+
+.sa { background: #394B93 } /* Shining Armor */
+.dd { background: #DECD72 } /* Daring Do */
+.bs { background: #DFA64B } /* Babs Seed */
+.mp { background: #B9B6BE } /*  */
+.md { background: #F7FCD8 } /* Moondancer */
+.mm { background: #DCCB98 } /* Minuette */
+.ss { background: #9CA6B1 } /*  */
+
+.sf { background: #DC7E18 } /* Spitfire */
+.ld { background: #92F7DA } /* Lightning Dust */
+.dg { background: #949494 } /* Diamond Dogs */
+.sn { background: #9CCECA } /* Snips & Snails */
+.na { background: #43200C } /*  */
+.mi { background: #068A4C } /*  */
+.az { background: #1F2550 } /* Ahuizotl */
+.dh { background: #f7ac5a } /* Doctor Horse */
+
+.th { background: #C28F3F } /* Trenderhoof */
+.hw { background: #BA5914 } /* Ms Harshwhinny */
+.pb { background: #B3FF7A } /* Ms Peachbottom */
+.mn { background: #CFCEE9 } /* Minuette */
+.lh { background: #FBFF79 } /* Lemon Hearts */
+.ph { background: #949297 } /* Prim Hemline */
+.ga { background: #A62820 } /* Garble */
+.ot { background: #E1DDBB } /* Our Town's Townsfolk */
+
+.ct { background: #DEF6E9 } /* Courtess Coloratura */
+.sv { background: #F3D6CA } /* Svengallop */
+.cp { background: #D2FFFA }
+.sg { background: #EDBBF3 } /* Starlight Glimmer */
+.st { background: #EA5421 } /* Sunburst */
+.pe { background: #53D1D9 } /* Princess Ember */
+.wb { background: #3BA4E7 } /* The Wonderbolts */
+.sz { background: #2694e7 } /* Seabreeze */
+
+.zb { background: #91e3c7 } /* Zephyr Breeze */
+.pf { background: #BBC8CA } /* Pie Family */
+.hf { background: #C08260 } /* Hooffields */
+.mc { background: #A4D5C7 } /* McColts */
+.wr { background: #537575 } /* Wind Rider */
+.cc { background: #5D2A40 } /* Coriander Cumin */
+.sm { background: #E69C56 } /* Saffron Masala */
+.zg { background: #D2C6D2 } /* Zesty Gourmand */
+
+.tre { background: #B9F06A } /* Tree Hugger */
+.spa { background: #65D1FC } /* Spa ponies */
+.trs { background: #924C34 } /* Trouble Soes */
+.sss { background: #C1B179 } /* Sheriff Silverstar */
+.prf { background: #723A18 } /* Prince Rutherford */
+.mms { background: #7C2263 } /* Method Mares */
+.tor { background: #51808a } /* Dragon Lord Torch */
+.fsf { background: #f8dbdb } /* Mr and Mrs Shy */
+.pt, .pt.r { background: #1CA4A0 } /* Pony Tones */
+
+.d { background: #999 }     /* Discord */
+.z { background: #696876 }  /* Zecora */
+
+.fi { background: #F1F7BB } /* Flim and Flam */
+.fa { background: #E1EA93 }
+
+.dt { /* Diamond Tiara */
+  background: #F8B7F7;
+  box-shadow: inset 0 0 0 1px #BB8CD8;
+}
+
+.tw { /* Twinkleheart */
+  background: #F5F7F2;
+  box-shadow: inset 0 0 0 1px #FFAAF8;
+}
+
+.sp { /* Suri Polomare */
+  background: #FFD0F8;
+  box-shadow: inset 0 0 0 1px #9867B4;
+}
+
+.fa.fi {
+  background: repeating-linear-gradient(-45deg, 
+    #F1F7BB, #F1F7BB 5px, 
+    #E1EA93 5px, #E1EA93 10px)
+}
+
+.dt.ss {
+  background: repeating-linear-gradient(-45deg, 
+    #F8B7F7, #F8B7F7 4px, 
+    #9CA6B1 4px, #9CA6B1 8px)
+}
+
+/* Mane characters */
+.pp { background: #FAB3D1; }
+.ts { background: #9C69C6 ; }
+.r { background: #eee; }
+.aj { background: #F7B071; }
+.rd { background: #96D8FE }
+.fs { background: #FCFD96 }
+
+.s { background: #62E972; }
+.su { background: #DE0629 }
+
+.ab { background: #F5FFA9; box-shadow: inset 0 0 0 1px #F77992 }
+.sc { background: #FCC577; }
+.sb { background: #E2BDED; }
+
+.pc {
+  background: #FDF5FB;
+  box-shadow: inset 0 0 0 1px #E18FE4; 
+}
+
+.pl {
+  background: #383276;
+  box-shadow: inset 0 0 0 1px #000000; 
+}
+
+.ca {
+  background: #FFCAEA;
+  box-shadow: inset 0 0 0 1px #9BFFFF;
+}
+
+.a { background: #666; }
+.ca.a { box-shadow: none; }
+
+.aj.r.fs.rd.pp.ts {
+  background: repeating-linear-gradient(-45deg, 
+    #FAB3D1, #FAB3D1 3px, 
+    #9C69C6 3px, #9C69C6 6px, 
+    #eee 6px, #eee 9px, 
+    #F7B071 9px, #F7B071 12px, 
+    #96D8FE 12px, #96D8FE 15px, 
+    #FCFD96 15px, #FCFD96 18px)
+}
+
+.aj.r.fs.rd.pp {
+  background: repeating-linear-gradient(-45deg, 
+    #FAB3D1, #FAB3D1 3px, 
+    #eeeeee 3px, #eeeeee 6px, 
+    #F7B071 6px, #F7B071 9px, 
+    #96D8FE 9px, #96D8FE 12px, 
+    #FCFD96 12px, #FCFD96 15px)
+}
+
+.aj.r.rd.pp.ts {
+  background: repeating-linear-gradient(-45deg, 
+    #FAB3D1, #FAB3D1 3px, 
+    #9C69C6 3px, #9C69C6 6px, 
+    #eee 6px, #eee 9px, 
+    #F7B071 9px, #F7B071 12px, 
+    #96D8FE 12px, #96D8FE 15px)
+}
+
+.aj.fs.rd.pp.ts {
+  background: repeating-linear-gradient(-45deg, 
+    #FAB3D1, #FAB3D1 3px, 
+    #9C69C6 3px, #9C69C6 6px, 
+    #F7B071 6px, #F7B071 9px, 
+    #96D8FE 9px, #96D8FE 12px, 
+    #FCFD96 12px, #FCFD96 15px)
+}
+
+.fs.rd.ts.r {
+  background: repeating-linear-gradient(-45deg, 
+    #9C69C6, #9C69C6 3px, 
+    #FCFD96 3px, #FCFD96 6px,
+    #96D8FE 6px, #96D8FE 9px, 
+    #eee 9px, #eee 12px)
+}
+
+.fs.rd.ts {
+  background: repeating-linear-gradient(-45deg,
+    #9C69C6, #9C69C6 4px,
+    #FCFD96 4px, #FCFD96 8px,
+    #96D8FE 8px, #96D8FE 12px)
+}
+
+.fs.rd {
+  background: repeating-linear-gradient(-45deg,
+    #FCFD96, #FCFD96 4px,
+    #96D8FE 4px, #96D8FE 8px)
+}
+
+.aj.r {
+  background: repeating-linear-gradient(-45deg, 
+    #eee, #eee 4px, 
+    #F7B071 4px, #F7B071 8px)
+}
+
+.fs.ts {
+  background: repeating-linear-gradient(-45deg, 
+    #9C69C6, #9C69C6 4px, 
+    #FCFD96 4px, #FCFD96 8px)
+}
+
+.fs.r {
+  background: repeating-linear-gradient(-45deg, 
+    #eee, #eee 4px, 
+    #FCFD96 4px, #FCFD96 8px)
+}
+
+.ab.sc.sb {
+  background: repeating-linear-gradient(-45deg, 
+    #F5FFA9, #F5FFA9 4px, 
+    #FCC577 4px, #FCC577 8px, 
+    #E2BDED 8px, #E2BDED 12px)
+}
+
+/* Filtering  */
+.filtered .lines li {
+  opacity: 0.16;
+}
+
+.filtered.show-pp .pp { opacity: 1; }
+.filtered.show-ts .ts { opacity: 1; }
+.filtered.show-r .r { opacity: 1; box-shadow: inset 0 0 0 1px #999; }
+.filtered.show-aj .aj { opacity: 1; }
+.filtered.show-rd .rd { opacity: 1;}
+.filtered.show-fs .fs { opacity: 1;}
+
+.filtered.show-su .su { opacity: 1;}
+.filtered.show-s .s { opacity: 1; }
+
+.filtered.show-ab .ab { opacity: 1; }
+.filtered.show-sc .sc { opacity: 1; }
+.filtered.show-sb .sb { opacity: 1; }
+
+.filtered.show-a .a { opacity: 1; }
+
+.filtered.show-pc .pc { opacity: 1; }
+.filtered.show-pl .pl { opacity: 1; }
+.filtered.show-ca .ca { opacity: 1;}
+
+.filtered.show-so .so { 
+  opacity: 1; 
+  box-shadow: inset 0 0 0 1px #FFBB00; 
+}

@@ -1,0 +1,11 @@
+beautifulsoup4==4.4.1
+bs4==0.0.1
+html5lib==0.9999999
+lxml==3.6.0
+Mako==1.0.4
+MarkupSafe==0.23
+natsort==5.0.1
+ordered-set==2.0.1
+requests==2.10.0
+simplejson==3.8.2
+six==1.10.0
