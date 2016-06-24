@@ -38,7 +38,7 @@
 
                     % if episode.title in special:
                     <ul class="special">
-                        % for name, classname in special[episode.title].items():
+                        % for name, classname in sorted(special[episode.title].items()):
                             <li><span class="${ classname }"></span> ${ name | h }</li>
                         % endfor
                     </ul>
@@ -58,7 +58,7 @@
         %for title, chars in legends:
         <h2>${ title | h }</h2>
         <ul>
-            %for char in chars:
+            %for char in sorted(chars):
                 <li><span class="${ classes[char] }"></span> ${ char | h}</li>
             %endfor
         </ul>
@@ -78,7 +78,8 @@
 		<p class="speaker"></p>
 		<p class="line"></p>
 	</div>
-	<div class="progress">Loading full transcript: <strong>0/6</strong></div>
+	<div class="progress">Loading full transcript:
+        <strong>0/${ str(len(seasons)) }</strong></div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

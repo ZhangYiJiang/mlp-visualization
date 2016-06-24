@@ -146,8 +146,10 @@ class ModelEncoder(json.JSONEncoder):
     def default(self, o):
         if isinstance(o, JSONSerializable):
             return o.to_json()
-        if isinstance(o, (set, map, filter)):
+        if isinstance(o, (map, filter)):
             return list(o)
+        if isinstance(o, set):
+            return list(sorted(o))
         return super().default(o)
 
 

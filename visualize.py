@@ -39,7 +39,7 @@ class MLPVisualizationLine(MLPLine):
         if self.is_antagonist():
             classes.add('a')
 
-        return ' '.join(classes)
+        return ' '.join(sorted(classes))
 
 output_prefix = 'web'
 visualization = MLP(hydrate=True, line=MLPVisualizationLine)
